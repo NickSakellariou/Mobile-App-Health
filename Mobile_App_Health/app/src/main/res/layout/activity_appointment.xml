@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Όνομα γιατρού που προγραμματίζει το συγκεκριμένο ραντεβού (αν το ραντεβού το προγραμματίζει ο ίδιος ο ασθενής, τότε αυτό το πεδίο μένει κενό)"
+                android:layout_marginTop="28dp"
+                android:textSize="20dp">
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_textOrderDoctor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Εισάγετε τα προσπωπικά στοιχεία του ασθενούς"
+                android:textSize="27dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Όνομα"
+                android:textSize="20dp">
+            </TextView>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_text1"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Επώνυμο"
+                android:textSize="20dp">
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_text2"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Όνομα πατέρα"
+                android:textSize="20dp">
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_text3"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Όνομα μητέρας"
+                android:textSize="20dp">
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_text4"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ΑΜΚΑ"
+                android:textSize="20dp">
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_text5"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Φύλλο"
+                android:textSize="20dp">
+            </TextView>
+
+            <RadioGroup android:layout_height="wrap_content" android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="8dp">
+                <RadioButton android:text="Αρσενικό"
+                    android:layout_width="wrap_content" android:id="@+id/male"
+                    android:layout_height="wrap_content" android:checked="true"></RadioButton>
+                <RadioButton android:text="Θηλυκό"
+                    android:layout_width="wrap_content" android:id="@+id/female"
+                    android:layout_height="wrap_content"></RadioButton>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ημερομηνία γέννησης"
+                android:textSize="20dp"
+                android:layout_marginBottom="8dp">
+            </TextView>
+
+            <DatePicker
+                android:id="@+id/birthdate"
+                android:layout_width="wrap_content"
+                android:calendarViewShown="true"
+                android:spinnersShown="false"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Διεύθυνση κατοικίας"
+                android:textSize="20dp">
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_text6"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Αριθμός τηλεφώνου κατοικίας"
+                android:textSize="20dp">
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_text7"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Αριθμός τηλεφώνου κινητού"
+                android:textSize="20dp">
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_text8"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Αλλεργίες (προαιρετικό)"
+                android:textSize="20dp">
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_text9"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Χρόνια νοσήματα (προαιρετικό)"
+                android:textSize="20dp">
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_text10"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Κύηση (προαιρετικό)"
+                android:textSize="20dp">
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_text11"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Επιλέξετε την ημερομηνία και την ώρα του ραντεβού"
+                android:textSize="20dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ΣΗΜΑΝΤΙΚΟΙ ΠΕΡΙΟΡΙΣΜΟΙ"
+                android:textSize="20dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1)Η ημερομηνία που θα επιλέξετε θα πρέπει να είναι μεταγενέστερη της σημερινής"
+                android:textSize="20dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2)Η ώρα που θα επιλέξετε θα πρέπει να είναι 08:00-14:00"
+                android:textSize="20dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3)Το κάθε ραντεβού κρατάει 30 λεπτά"
+                android:textSize="20dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4)Θα πρέπει να επιλέξετε την ώρα έναρξης του ραντεβού που μπορεί να ειναι 08:00,08:30,09:00,09:30,10:00,10:30,11:00,11:30,12:00,12:30,13:00,13:30"
+                android:textSize="20dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5)Το μισάωρο που θα επιλέξετε δεν θα πρέπει να έχει ήδη επιλεγεί από άλλον ασθενή"
+                android:textSize="20dp"
+                android:layout_marginBottom="16dp">
+            </TextView>
+
+            <DatePicker
+                android:id="@+id/date_picker"
+                android:layout_width="wrap_content"
+                android:calendarViewShown="true"
+                android:spinnersShown="false"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/button_dates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ΔΕΙΤΕ ΟΛΑ ΤΑ ΡΑΝΤΕΒΟΥ ΤΟΥ ΙΑΤΡΕΙΟΥ ΓΙΑ ΤΗΝ ΜΕΡΑ ΠΟΥ ΕΧΕΤΕ ΕΠΙΛΕΞΕΙ"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:layout_marginTop="16dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/table_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="0,1"
+                    android:gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/referencedate"
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:textSize="20dp"
+                            android:layout_column="0"
+                            android:textStyle="bold"
+                            android:gravity="center" />
+                        <TextView
+                            android:id="@+id/referencedoctor"
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:textSize="20dp"
+                            android:layout_column="1"
+                            android:textStyle="bold"
+                            android:gravity="center" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                        <TextView
+                            android:id="@+id/text_view_referencedate"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:layout_column="0"
+                            android:gravity="center"/>
+                        <TextView
+                            android:id="@+id/text_view_referencedoctor"
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:textSize="16dp"
+                            android:layout_column="1"
+                            android:gravity="center" />
+                    </TableRow>
+
+                </TableLayout>
+
+            </HorizontalScrollView>
+
+            <TimePicker
+                android:id="@+id/time_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Επιλέξτε ποιος γιατρός θα πραγματοποιήσει την εξέταση του ασθενούς"
+                android:textSize="20dp"
+                android:layout_marginTop="8dp">
+            </TextView>
+
+            <RadioGroup android:layout_height="wrap_content" android:id="@+id/doctor"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="8dp">
+                <RadioButton android:text="Παύλος Ιωάννου"
+                    android:layout_width="wrap_content" android:id="@+id/doctor1"
+                    android:layout_height="wrap_content" android:checked="true"></RadioButton>
+                <RadioButton android:text="Έλενα Αβούρη"
+                    android:layout_width="wrap_content" android:id="@+id/doctor2"
+                    android:layout_height="wrap_content"></RadioButton>
+                <RadioButton android:text="Ζωή Ανάγνου"
+                    android:layout_width="wrap_content" android:id="@+id/doctor3"
+                    android:layout_height="wrap_content"></RadioButton>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ΥΠΟΒΟΛΗ"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

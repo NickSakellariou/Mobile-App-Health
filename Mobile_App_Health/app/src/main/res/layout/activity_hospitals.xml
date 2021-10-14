@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tv_hospitals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Επιλέξτε νοσοκομείο :"
+        android:textSize="20sp"/>
+
+    <Spinner
+        android:id="@+id/sp_hospitals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        android:id="@+id/btn_hospitals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ΥΠΟΒΟΛΗ ΝΟΣΟΚΟΜΕΙΟΥ"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/tv_centers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ή επιλέξτε κέντρο υγείας :"
+        android:textSize="20sp"
+        android:layout_marginTop="80dp"/>
+
+    <Spinner
+        android:id="@+id/sp_centers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        android:id="@+id/btn_centers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ΥΠΟΒΟΛΗ ΚΕΝΤΡΟΥ ΥΓΕΙΑΣ"
+        android:layout_marginTop="40dp"/>
+
+</LinearLayout>
